@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 
 :root {
+  --white: rgb(252, 252, 252);
   --ocre: rgb(153, 128, 29);
   --transparent-dark: rgba(0, 0, 0, 0.309);
 }
@@ -40,5 +41,13 @@ nav ul li {
 }
 
 .navbar-nav > li > a:hover {
-  color:rgb(107, 228, 188);
+  border-top: 0.1875rem solid var(--ocre);
+}
+
+.hamburger-btn {
+  color: var(--white);
+}
+
+.hamburger-btn:hover {
+  color: var(--ocre);
 }
