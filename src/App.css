@@ -114,3 +114,41 @@ nav ul li {
     font-size: 1.3rem;
   }
 }
+
+/* ************************ ABOUT ME SECTION *********************** */
+
+/* ----------- profile pic ---------- */
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+
+
+.profile-img {
+  width: 16rem;
+  border-radius: 50%;
+  padding: .3rem;
+  border: 1px solid var(--sweet-blueberry);
+}
+
+@media(max-width: 468px) {
+  .profile-img {
+    width: 10rem;
+  }
+}
+
+
+/* ----------- Text ---------- */
+
+.about-heading {
+  color: var(--sweet-blueberry);
+  text-transform: uppercase;
+}
+
+@media(max-width: 468px) {
+
+}
