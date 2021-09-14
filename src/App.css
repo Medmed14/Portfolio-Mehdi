@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap');
+
 
 :root {
   --white: rgb(252, 252, 252);
-  --ocre: rgb(153, 128, 29);
+  --sweet-blueberry: rgb(144,117,136);
   --transparent-dark: rgba(0, 0, 0, 0.309);
 }
 
@@ -12,6 +13,10 @@ body {
 }
 
 /* ************************ NAVBAR *********************** */
+nav {
+  z-index: 2;
+}
+
 .logo {
   width: 6rem;
   margin-left: 1.3rem;
@@ -36,12 +41,12 @@ nav ul li {
 
 
 .navbar-nav > li > a.active, .navbar-nav >li > a:focus {
-  border-top: 0.1875rem solid var(--ocre);
+  border-top: 0.1875rem solid var(--sweet-blueberry);
 
 }
 
 .navbar-nav > li > a:hover {
-  border-top: 0.1875rem solid var(--ocre);
+  border-top: 0.1875rem solid var(--sweet-blueberry);
 }
 
 .hamburger-btn {
@@ -49,5 +54,63 @@ nav ul li {
 }
 
 .hamburger-btn:hover {
-  color: var(--ocre);
+  color: var(--sweet-blueberry);
+}
+
+/* ************************ HEADER *********************** */
+
+.header-wraper {
+  position : relative;
+  background : url(gradient.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info {
+  
+  display: flex;
+  position:absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+
+}
+
+.main-info h1 {
+  font-size: 4rem;
+}
+
+@media(max-width: 768px) {
+  .main-info h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* ----------- Particles JS ---------- */
+
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+
+/* ----------- Typed Text ---------- */
+.typed-text {
+  font-size: 2.5rem;
+}
+
+@media(max-width: 768px) {
+  .typed-text  {
+    font-size: 1.3rem;
+  }
 }
