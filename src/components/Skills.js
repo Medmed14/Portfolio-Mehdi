@@ -25,6 +25,7 @@ const Skills = () => {
             <h1 className="skills-heading">Mes compétences</h1>
                 <div className="row hard-skills">
                     <div className="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-1 front-skills">
+                        <div className="surline"></div>
                         <h3 className="skill-heading">Front-end</h3>
                         <ul>
                             <li>Maquettage d'application (wireframes).</li>
@@ -41,6 +42,7 @@ const Skills = () => {
                         </ul>
                     </div>
                     <div className="back-end-skills col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-2">
+                        <div className="surline"></div>
                         <h3 className="skill-heading">Back-end</h3>
                         <ul>
                             <li>Modélisation et création de base de données.</li>
@@ -57,6 +59,7 @@ const Skills = () => {
                 </div>
                 <div className="row">
                     <div className="col-10 offset-1 col-md-6 offset-md-2 col-lg-4 offset-lg-3 col-xl-4 offset-xl-1 col-xxl-2 offset-xxl-3 soft-skills">
+                        <div className="surline"></div>
                         <h3 className="skill-heading">Soft skills</h3>
                         <ul>
                             <li>Esprit d'équipe.</li>

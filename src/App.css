@@ -1,23 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 :root {
   --white: rgb(252, 252, 252);
   --primary-light-grey: #f4f4f4;
   --primary-dark: rgb(9, 9, 9);
   --primary-dark-grey: rgb(94, 94, 94);
-  --sweet-blueberry: rgb(144,117,136);
+  --sweet-blueberry: rgb(144, 117, 136);
   --darker-blueberry: rgb(101, 105, 146);
   --cramberry: rgb(143, 91, 112);
   --currant: rgb(102, 25, 58);
-  --blueberry:rgb(29, 61, 102);
-  --peps:rgb(84, 194, 163);
+  --blueberry: rgb(29, 61, 102);
+  --peps: rgb(84, 194, 163);
   --transparent-dark: rgba(0, 0, 0, 0.309);
 }
 
-
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 /* ************************ NAVBAR *********************** */
@@ -40,17 +38,16 @@ nav a.nav-link {
 nav ul li {
   text-transform: uppercase;
   font-size: 1.2rem;
-  margin-right:2rem;
+  margin-right: 2rem;
 }
 
 .navbar-nav > li > a {
   border-top: 0.1875rem solid var(--transparent-dark);
 }
 
-
-.navbar-nav > li > a.active, .navbar-nav >li > a:focus {
+.navbar-nav > li > a.active,
+.navbar-nav > li > a:focus {
   border-top: 0.1875rem solid var(--sweet-blueberry);
-
 }
 
 .navbar-nav > li > a:hover {
@@ -68,17 +65,16 @@ nav ul li {
 /* ************************ HEADER *********************** */
 
 .header-wraper {
-  position : relative;
-  background : url(gradient.png) no-repeat;
+  position: relative;
+  background: url(gradient.png) no-repeat;
   background-size: cover;
   background-position: center;
   height: 90vh;
 }
 
 .main-info {
-  
   display: flex;
-  position:absolute;
+  position: absolute;
   z-index: 2;
   top: 0;
   right: 0;
@@ -88,22 +84,20 @@ nav ul li {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: 'Nunito', sans-serif;
-
+  font-family: 'Open Sans', sans-serif;
 }
 
 .main-info h1 {
   font-size: 4rem;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .main-info h1 {
     font-size: 2.2rem;
   }
 }
 
 /* ----------- Particles JS ---------- */
-
 .tsparticles-canvas-el {
   position: absolute;
   height: 100vh;
@@ -111,26 +105,23 @@ nav ul li {
   z-index: 1;
 }
 
-
 /* ----------- Typed Text ---------- */
 .typed-text {
   font-size: 2.5rem;
 }
 
-@media(max-width: 768px) {
-  .typed-text  {
+@media (max-width: 768px) {
+  .typed-text {
     font-size: 1.3rem;
   }
 }
 
 /* ************************ ABOUT ME SECTION *********************** */
-
 .about-me {
   padding-top: 10rem;
-  font-family: 'Nunito', sans-serif;
-  
+  font-family: "Nunito", sans-serif;
 }
-@media(max-width: 468px) {
+@media (max-width: 468px) {
   .about-me {
     padding-top: 4rem;
   }
@@ -144,44 +135,39 @@ nav ul li {
   margin-bottom: 3rem;
 }
 
-
-
 .profile {
   width: 16rem;
   border-radius: 50%;
-  padding: .3rem;
+  padding: 0.3rem;
   border: 1px solid var(--sweet-blueberry);
 }
 
-@media(max-width: 468px) {
+@media (max-width: 468px) {
   .profile {
     width: 10rem;
   }
 }
 
-
 /* ----------- Text ---------- */
-
 .about-heading {
   color: var(--sweet-blueberry);
   text-transform: uppercase;
 }
 
-@media(max-width: 468px) {
+@media (max-width: 468px) {
   .about-heading {
     margin-left: 1rem;
   }
 }
 
 /* ************************ SKILLS SECTION *********************** */
-
 .skills {
   margin-top: 12rem;
-  font-family: 'Nunito', sans-serif;
-  background-color:var(--primary-light-grey);
+  font-family: "Nunito", sans-serif;
+  background-color: var(--primary-light-grey);
 }
 
-@media(max-width: 468px) {
+@media (max-width: 468px) {
   .skills {
     margin-top: 4rem;
   }
@@ -193,7 +179,7 @@ nav ul li {
   text-transform: uppercase;
   padding-bottom: 4rem;
 }
-@media(max-width: 468px) {
+@media (max-width: 468px) {
   .skills-heading {
     font-size: 1.6rem;
     padding-top: 2rem;
@@ -201,12 +187,20 @@ nav ul li {
   }
 }
 
+.surline {
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  background: var(--currant);
+  width: 15rem;
+  height: 0.03rem;
+}
+
 .skill-heading {
   color: var(--darker-blueberry);
   margin-bottom: 2rem;
   margin-left: 2rem;
 }
-@media(max-width: 468px) {
+@media (max-width: 468px) {
   .skill-heading {
     padding-bottom: 1rem;
     margin-left: 1rem;
@@ -214,8 +208,7 @@ nav ul li {
 }
 
 /* front skills container */
-@media(max-width: 1200px) {
- 
+@media (max-width: 1200px) {
   .front-skills {
     margin-bottom: 5rem;
   }
@@ -225,7 +218,7 @@ nav ul li {
 .hard-skills {
   margin-bottom: 6rem;
 }
-@media(max-width: 1200px) {
+@media (max-width: 1200px) {
   .hard-skills {
     margin-bottom: 5rem;
   }
@@ -235,18 +228,10 @@ nav ul li {
   margin-bottom: 5rem;
 }
 
-/* .border-effect {
-  border: 1px solid rgb(109, 107, 107);
-  border-radius: 25px;
-  padding: 2rem;
-} */
-
-/* ----------- arousel parameters and design ---------- */
-
-
-
-
 /* ************************ EXPERIENCE SECTION *********************** */
+.experience {
+  padding: 3rem 0;
+}
 
 .experience-wrapper {
   position: relative;
@@ -272,10 +257,10 @@ nav ul li {
 }
 
 .timeline-block {
-   width: calc(50% + 0.5rem);
-   display: flex;
-   justify-content: space-between;
-   clear: both;
+  width: calc(50% + 0.5rem);
+  display: flex;
+  justify-content: space-between;
+  clear: both;
 }
 
 .timeline-block-right {
@@ -298,7 +283,6 @@ nav ul li {
 }
 
 .timeline-content {
- 
   width: 95%;
   padding: 0 0.9375rem;
   color: var(--primary-dark-grey);
@@ -310,10 +294,9 @@ nav ul li {
 }
 
 /* --------- MEDIA ------------- */
-@media(max-width: 768px) {
-  
+@media (max-width: 768px) {
   .experience {
-    padding: 0.7rem;
+    padding: 3rem 1rem;
   }
 
   .experience .container {
@@ -326,7 +309,6 @@ nav ul li {
   }
 
   .timeline-block-right {
-    
     float: none;
     width: 100%;
   }
@@ -336,4 +318,111 @@ nav ul li {
     direction: ltr;
     width: 100%;
   }
+}
+
+/* ************************ PORTFOLIO SECTION *********************** */
+.portfolio-wrapper {
+  background: var(--primary-light-grey);
+  padding: 5rem 0;
+}
+@media (max-width:768px) {
+  .portfolio-wrapper {
+    padding: 2.5rem 0;
+  }
+}
+
+.portfolio-wrapper h1 {
+  color: var(--cramberry);
+}
+
+.portfolio-image {
+  max-width: 100%;
+  border: 1px solid var(--transparent-dark);
+  border-radius: 10px;
+  padding: 1rem 1rem;
+}
+
+
+/* 
+.image-box-wrapper {
+  display: flex;
+  flex:auto;
+}
+
+.portfolio-image-box {
+  margin: 1rem;
+  
+}
+
+@media (max-width:1200px) {
+  
+.image-box-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+ 
+}
+
+.portfolio-image-box {
+  margin: 1rem;
+  
+}
+} */
+
+
+
+
+
+/* ************************ CONTACT SECTION *********************** */
+
+.contact-heading {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  color: var(--currant);
+}
+
+#formulaire{
+  background-color: var(--primary-light-grey);
+  color: var(--darker-blueberry);
+  border:none;
+}
+
+#carte{
+  width:100%;
+  height:35em;
+  margin-top:5em;
+}
+
+#infosSte{
+  margin-top:0em;
+  
+}
+
+.champ{
+  margin-top:1em;
+  text-align: center;
+  border:none;
+  font-size: 1.2em;
+  color:white;
+  background-color:#212529;
+}
+
+/* .icone{
+  width: 2em;
+  font-size: 3em;
+} */
+
+/* ----- SOCIAL NETWORKS ------ */
+
+.list {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.item-social {
+  padding: 1rem;
+  list-style: none;
 }
