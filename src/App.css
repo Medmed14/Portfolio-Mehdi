@@ -5,12 +5,14 @@
   --primary-light-grey: #f4f4f4;
   --primary-dark: rgb(9, 9, 9);
   --primary-dark-grey: rgb(94, 94, 94);
+  --dark-pomelo: rgb(162, 52, 52);
+  --light-pomelo: rgb(211, 135, 121);
   --sweet-blueberry: rgb(144, 117, 136);
   --darker-blueberry: rgb(101, 105, 146);
   --cramberry: rgb(143, 91, 112);
   --currant: rgb(102, 25, 58);
   --blueberry: rgb(29, 61, 102);
-  --peps: rgb(84, 194, 163);
+  --peps: rgb(144, 216, 196);
   --transparent-dark: rgba(0, 0, 0, 0.309);
 }
 
@@ -323,11 +325,13 @@ nav ul li {
 /* ************************ PORTFOLIO SECTION *********************** */
 .portfolio-wrapper {
   background: var(--primary-light-grey);
-  padding: 5rem 0;
+  padding-top: 3rem ;
+  padding-bottom: 7rem;
 }
 @media (max-width:768px) {
   .portfolio-wrapper {
     padding: 2.5rem 0;
+    padding-bottom: 6rem;
   }
 }
 
@@ -335,43 +339,78 @@ nav ul li {
   color: var(--cramberry);
 }
 
+/* hover effects */
 .portfolio-image {
   max-width: 100%;
+  max-height: 100%;
   border: 1px solid var(--transparent-dark);
   border-radius: 10px;
   padding: 1rem 1rem;
+  transition: 0.5s ease-in-out;
 }
 
-
-/* 
-.image-box-wrapper {
-  display: flex;
-  flex:auto;
+.portfolio-item:hover .portfolio-image {
+  opacity: 0.7;
+  border: 1px solid var(--currant);
+  border-radius: 5px;
+  background:var(--primary-dark-grey);
 }
 
-.portfolio-image-box {
-  margin: 1rem;
+.portfolio-item:hover .portfolio-icon {
+  color: var(--currant);
+  opacity: 1;
+
+}
+
+.portfolio-item {
+  position: relative;
   
 }
 
-@media (max-width:1200px) {
+.portfolio-icon {
+  position: absolute;
+  opacity: 0.4;
+  font-size: 3rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  transition: 0.3s ease-in-out;
   
-.image-box-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: initial;
- 
 }
 
-.portfolio-image-box {
-  margin: 1rem;
-  
+/* ----------- POPUP BOX ------------- */
+.title-popupbox {
+  text-align: center;
+  margin-bottom: 1rem;
 }
-} */
 
+.portfolio-image-popupbox {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  padding: 0 0.5rem;
+}
+@media (max-width: 768px){
+  .portfolio-image-popupbox {
+    width: 80%;
+  }
+}
 
+.hyper-link {
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--dark-pomelo);
+}
 
-
+.hyper-link:hover {
+  cursor: pointer;
+  color: var(--light-pomelo);
+}
 
 /* ************************ CONTACT SECTION *********************** */
 
