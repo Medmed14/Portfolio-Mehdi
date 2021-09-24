@@ -2,7 +2,8 @@ import React from 'react'
 
 function Experience() {
     return (
-        <div className="experience">
+        <>
+        <div id="experience">
             <div className="d-flex justify-content-center my-5">
                 <h1>mon expérience</h1>
             </div>
@@ -44,6 +45,7 @@ function Experience() {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 

@@ -5,6 +5,7 @@
   --primary-light-grey: #f4f4f4;
   --primary-dark: rgb(9, 9, 9);
   --primary-dark-grey: rgb(94, 94, 94);
+  --dark-grey-nav:rgb(33,37,41);
   --dark-pomelo: rgb(162, 52, 52);
   --light-pomelo: rgb(211, 135, 121);
   --sweet-blueberry: rgb(144, 117, 136);
@@ -71,7 +72,7 @@ nav ul li {
   background: url(gradient.png) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .main-info {
@@ -193,7 +194,7 @@ nav ul li {
   margin-bottom: 1rem;
   margin-left: 1rem;
   background: var(--currant);
-  width: 15rem;
+  width: 13rem;
   height: 0.03rem;
 }
 
@@ -231,7 +232,7 @@ nav ul li {
 }
 
 /* ************************ EXPERIENCE SECTION *********************** */
-.experience {
+#experience {
   padding: 3rem 0;
 }
 
@@ -241,7 +242,7 @@ nav ul li {
   overflow: hidden;
 }
 
-.experience h1 {
+#experience h1 {
   text-transform: uppercase;
   color: var(--currant);
 }
@@ -297,11 +298,11 @@ nav ul li {
 
 /* --------- MEDIA ------------- */
 @media (max-width: 768px) {
-  .experience {
+  #experience {
     padding: 3rem 1rem;
   }
 
-  .experience .container {
+  #experience .container {
     padding-left: 0;
   }
 
@@ -381,6 +382,11 @@ nav ul li {
 }
 
 /* ----------- POPUP BOX ------------- */
+.popupbox-wrapper {
+  margin-top: 5rem;
+  width: 60rem;
+}
+
 .title-popupbox {
   text-align: center;
   margin-bottom: 1rem;
@@ -466,15 +472,48 @@ nav ul li {
 }
 
 
-/* ----- SOCIAL NETWORKS ------ */
+/* ************************ FOOTER COMPONENT *********************** */
 
-.list {
-  display:flex;
-  flex-direction: row;
-  justify-content: center;
+.footer {
+  background-color: var(--dark-grey-nav);
 }
 
-.item-social {
-  padding: 1rem;
-  list-style: none;
+/* ----- Footer nav-links ------ */
+
+.footer-nav {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--primary-light-grey);
+}
+
+.footer-nav:hover {
+  color: var(--cramberry);
+}
+
+/* ----- SOCIAL NETWORKS ------ */
+
+.medias {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.logo-medias {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid var(--cramberry);
+  background-color: var(--primary-light-grey);
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.logo-medias:hover {
+  background-color: var(--cramberry);
+  border: 5px solid var(--cramberry);
+}
+
+.host {
+  font-size: 0.7rem;
 }

@@ -109,7 +109,7 @@ function Portfolio() {
     }
 
     return (
-       <div className="portfolio-wrapper">
+       <div id="portfolio" className="portfolio-wrapper">
            <div className="container-lg">
                <h1 className="text-uppercase text-center py-5">portfolio</h1>
                <div className="row gy-4 row-cols-2 row-cols-sm-2 row-cols-md-4">
