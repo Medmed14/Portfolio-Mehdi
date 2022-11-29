@@ -43,7 +43,7 @@ const Contact = () => {
                                         <input type="email" className="form-control" name="email" required />
                                     </div>
                                     <div className="form-group">
-                                        <label for="exampleFormControlTextarea1">Message *</label>
+                                        <label htmlFor="exampleFormControlTextarea1">Message *</label>
                                         <textarea className="form-control" rows="3" name="message" required></textarea>
                                     </div>
                                     <div className="col-12">
@@ -58,7 +58,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="col-12  col-lg-8 offset-lg-2">
-                    <iframe id="carte" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90635.30060914582!2d-0.6222130715360024!3d44.77360535110438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd552132d74e7485%3A0x40665174816cf60!2s33140%20Villenave-d&#39;Ornon!5e0!3m2!1sfr!2sfr!4v1632398131124!5m2!1sfr!2sfr" width="400" height="300" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe id="carte" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90635.30060914582!2d-0.6222130715360024!3d44.77360535110438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd552132d74e7485%3A0x40665174816cf60!2s33140%20Villenave-d&#39;Ornon!5e0!3m2!1sfr!2sfr!4v1632398131124!5m2!1sfr!2sfr" width="400" height="300" allowFullScreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </>

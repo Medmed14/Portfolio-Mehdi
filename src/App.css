@@ -104,6 +104,34 @@ nav ul li {
   }
 }
 
+.arrow {
+    position: absolute;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-name: clignoter;
+    animation-name: clignoter;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    transition: none;
+    width: 2rem;
+    margin-top: 85vh;
+    margin-left: 50%;
+    transform: translateX(-1rem);
+   
+}
+
+@keyframes clignoter {
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
+@-webkit-keyframes clignoter {
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
 /* ----------- Particles JS ---------- */
 .tsparticles-canvas-el {
   position: absolute;

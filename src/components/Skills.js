@@ -59,10 +59,10 @@ const Skills = () => {
                     </ul>
                 </div>
                 <div className="col-10 offset-1 col-md-6 offset-md-3 col-lg-4 offset-lg-4 col-xl-4 offset-xl-2 col-xxl-2 offset-xxl-2 logo-carousel">
-                    <div class="col-6 offset-3 col-md-6 offset-md-3 col-lg-4 offset-lg-4 col-xl-4 offset-xl-3 col-xxl-2 offset-xxl-3 logo-carousel container-btn">
-                        <div class="round-button">
-                            <div class="round-button-circle">
-                                <a class="round-button" href={cvPdf} target="_blank">CV</a>
+                    <div className="col-6 offset-3 col-md-6 offset-md-3 col-lg-4 offset-lg-4 col-xl-4 offset-xl-3 col-xxl-2 offset-xxl-3 logo-carousel container-btn">
+                        <div className="round-button">
+                            <div className="round-button-circle">
+                                <a className="round-button" href={cvPdf} target="_blank">CV</a>
                             </div>
                         </div>
                     </div>
